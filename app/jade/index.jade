@@ -103,38 +103,45 @@ html(lang="en")
 						li.text-type-first Increase of 15-20% in monthly collected revenue.
 						li.text-type-first Expert teams with vast knowledge and experience who will follow up every claim to zero balance.
 						li.text-type-first Services spanning coding review, claims and payment processing, as well as Insurance and patient follow up.
-						button read more
-				//- div	
-				//- 	p.title-type-first Benefits
-				//- 
+						button.benefits__button read more
 		section.services 
 			.container
-				.services__block 
-					div
+				.services__container
+					div.services__block-first
 						p.title-type-first Our Services
 						p.subtitle-type-first Our staff extension services include
-					div
-						p.title-type-first Our Services
-						p.subtitle-type-first Our staff extension services include
-	section.testimonials
-		.container 
-			p.title-type-first.testimonials__title Testimonials
-			p.subtitle-type-first.testimonials__subtitle What people say?
-			p.subtitle-type-first.testimonials__subtitle 90%
-			p.subtitle-type-first.testimonials__subtitle First pass payment
-	section.physicians
-		.container 
-			p.title-type-first For Physicians
-			p.subtitle-type-first Our staff extension services include
-			.swiffy-slider
-				ul.slider-container
-					
-					img.benefits__img(src="img/benefits.png", style="max-width: 100%;height: auto;" alt="")
-				
-					img.benefits__img(src="img/about-us.png", alt="")
-					
-					img.benefits__img(src="img/benefits.png", alt="")
-				button.slider-nav
-				button.slider-nav.slider-nav-next
-	footer.footer
+						div.services__block
+							p.services__title Coding Services 
+							span.services__span 
+							span.services__span
+						div.services__block_accordion 
+							img(src="img/coding-services.png", alt="")
+							div.services__block_accordion-small
+								p.about-us__block_desc We offer high quality coding and auditing services to hospitals and physicians; services extended for Anesthesia, Radiology, E&M and Surgery coding.
+								button.about-us__btn READ MORE
+						div.services__block
+							p.services__title Credentialing
+							span.services__span 
+							span.services__span
+						div.services__block_accordion 
+							img(src="img/coding-services.png", alt="")
+							div.services__block_accordion-small
+								p.about-us__block_desc We offer high quality coding and auditing services to hospitals and physicians; services extended for Anesthesia, Radiology, E&M and Surgery coding.
+								button.about-us__btn READ MORE
+						div.services__block
+							p.services__title HCC Maangement Services
+							span.services__span 
+							span.services__span
+						div.services__block_accordion 
+							img(src="img/coding-services.png", alt="")
+							div.services__block_accordion-small
+								p.about-us__block_desc We offer high quality coding and auditing services to hospitals and physicians; services extended for Anesthesia, Radiology, E&M and Surgery coding.
+								button.about-us__btn READ MORE
+					div.services__block-second
+						p.title-type-first Security
+						p.subtitle-type-first POLI Compliance
+						img(src="img/security.png", class="services__img", alt="")
+						p.text-type-first We work with you to develop customized risk-management solutions covering information security, business continuity and privacy regulations. 
+						button.benefits__button read more
+						
 	script(src="js/main.js")
