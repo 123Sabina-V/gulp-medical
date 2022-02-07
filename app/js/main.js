@@ -24,6 +24,16 @@
 				return false;
 			});
 		});
-		
+		// $(document).ready(function(){
+		// 	$('.services__tab_plus').click(function(){
+		// 		$('.services__block_accordion').slideToggle(300);      
+		// 		return false;
+		// 	});
+		// });
+		$( ".services__block" ).on('click', function() {
+			$(this).find(".services__tab_plus").toggleClass('open-tab')
+			$( this ).parent().find( ".tab-content" ).slideToggle( );
+		  });
+	
 	});
 })(jQuery);

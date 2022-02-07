@@ -1,19 +1,22 @@
 .services
+    display: none
     &__desc
         width: 419px
         margin-left: 25px
     &__container
         display: flex
+        padding-bottom: 161px
     &__block
-        &::after
-                content: ''
-                position: absolute
-                height: 1px
-                background: #979797
-                width: 592px
+        display: flex
+        &::before
+            content: ''
+            position: absolute
+            height: 1px
+            background: #979797
+            width: 592px
         &-second
             width: 474px
-        &-first 
+        &-first
             width: 592px
             margin-right: 102px
         &_accordion
@@ -23,11 +26,42 @@
                 margin-left: 25px
     &__img
         padding: 50px 0px
-    &__span
-        width: 18px
-        height: 3px
-        background: #000000
-   
+    &__tab_plus
+        margin-left: 286px
+        margin-top: 73px
+        right: 0px
+        width: 20px
+        height: 20px
+        position: relative
+        transition: all 0.3s
+        cursor: pointer
+        &::after
+            display: block
+            content: ""
+            position: absolute
+            top: 50%
+            left: 50%
+            background-color:#0b2540
+            transform: translate(-50%, -50%)
+            width: 20px
+            height: 3px
+            transition: all 0.3s
+        &::before
+            display: block
+            content: ""
+            position: absolute
+            width: 20px
+            height: 3px    
+            top: 50%
+            left: 50%
+            background-color: black
+            transform: translate(-50%, -50%) rotateZ(90deg)
+            transition: all 0.3s
+        &.open-tab
+            transition: all 0.3s
+            &::before
+                transform: translate(-50%, -50%)  rotateZ(0deg)
+
     &__title
         padding-top: 67px
         font-family: Asap
@@ -36,4 +70,3 @@
         font-size: 24px
         line-height: 28px
         color: #0E77AF
-        

@@ -104,44 +104,114 @@ html(lang="en")
 						li.text-type-first Expert teams with vast knowledge and experience who will follow up every claim to zero balance.
 						li.text-type-first Services spanning coding review, claims and payment processing, as well as Insurance and patient follow up.
 						button.benefits__button read more
-		section.services 
+		section
 			.container
 				.services__container
 					div.services__block-first
 						p.title-type-first Our Services
 						p.subtitle-type-first Our staff extension services include
 						div.services__block
-							p.services__title Coding Services 
-							span.services__span 
-							span.services__span
-						div.services__block_accordion 
-							img(src="img/coding-services.png", alt="")
-							div.services__block_accordion-small
-								p.about-us__block_desc We offer high quality coding and auditing services to hospitals and physicians; services extended for Anesthesia, Radiology, E&M and Surgery coding.
-								button.about-us__btn READ MORE
+							p.services__title HCC Maangement Services
+							span.services__tab_plus
+						div.services.tab-content
+							div.services__block_accordion
+								img(src="img/coding-services.png", alt="")
+								div.services__block_accordion-small
+									p.about-us__block_desc We offer high quality coding and auditing services to hospitals and physicians; services extended for Anesthesia, Radiology, E&M and Surgery coding.
+									button.about-us__btn READ MORE
 						div.services__block
 							p.services__title Credentialing
-							span.services__span 
-							span.services__span
-						div.services__block_accordion 
-							img(src="img/coding-services.png", alt="")
-							div.services__block_accordion-small
-								p.about-us__block_desc We offer high quality coding and auditing services to hospitals and physicians; services extended for Anesthesia, Radiology, E&M and Surgery coding.
-								button.about-us__btn READ MORE
+							span.services__tab_plus
+						div.services.tab-content
+							div.services__block_accordion
+								img(src="img/coding-services.png", alt="")
+								div.services__block_accordion-small
+									p.about-us__block_desc We offer high quality coding and auditing services to hospitals and physicians; services extended for Anesthesia, Radiology, E&M and Surgery coding.
+									button.about-us__btn READ MORE
 						div.services__block
 							p.services__title HCC Maangement Services
-							span.services__span 
-							span.services__span
-						div.services__block_accordion 
-							img(src="img/coding-services.png", alt="")
-							div.services__block_accordion-small
-								p.about-us__block_desc We offer high quality coding and auditing services to hospitals and physicians; services extended for Anesthesia, Radiology, E&M and Surgery coding.
-								button.about-us__btn READ MORE
+							span.services__tab_plus
+						div.services.tab-content
+							div.services__block_accordion
+								img(src="img/coding-services.png", alt="")
+								div.services__block_accordion-small
+									p.about-us__block_desc We offer high quality coding and auditing services to hospitals and physicians; services extended for Anesthesia, Radiology, E&M and Surgery coding.
+									button.about-us__btn READ MORE
 					div.services__block-second
 						p.title-type-first Security
 						p.subtitle-type-first POLI Compliance
 						img(src="img/security.png", class="services__img", alt="")
 						p.text-type-first We work with you to develop customized risk-management solutions covering information security, business continuity and privacy regulations. 
 						button.benefits__button read more
-						
+		section.testimonials
+			.container
+				.testimonials__section
+					.testimonials__block-first
+						p.title-type-first.testimonials__title Testimonials
+						p.subtitle-type-first.testimonials__subtitle What people say?
+						p.testimonials__percent 90%
+						p.testimonials__text First pass payment
+						button.testimonials__text Next /
+						button.testimonials__text.prev Prev
+					.testimonials__block-second
+						p.testimonials__block_title Increased revenues
+						p.testimonials__block_desc When most people think of laser eye surgery, they automatically think of LASIK. While it is true that LASIK is a type of laser eye surgery, there are a number of other laser procedures that can produce equally successful results 
+						p.testimonials__block_title Sam Andrews
+		section.physicians 
+			.container
+				div.physicians__section
+					div 
+						p.title-type-first For Physicians
+						p.subtitle-type-first Our Promise
+						p.text-type-first 90% First Pass payment within 30 days <br />@up to 3% of collected revenue.<br/> Free Credentialing and Re-credentialing
+						button.about-us__btn.physicians__button read more
+						p.title-type-first For Hospitals/Medical Billing Companies 
+						p.subtitle-type-first Our Promise
+						p.text-type-first Increase in revenue by 15% <br />Decrease in costs by 40%<br />Accelerated cash flows with effective management of denials
+						button.about-us__btn read more
+					.physicians__block-grey 
+						p.title-type-first.physicians__title Appointment Form
+						input(type="text" placeholder="First Name*" class="physicians__input")
+						input(type="text" placeholder="Last Name*" class="physicians__input")
+						input(type="text" placeholder="Email Address*" class="physicians__input")
+						input(type="text" placeholder="Company" class="physicians__input")
+						button.physicians__button-red send
+		section.footer__section
+			.footer__adress
+				img(src="img/location.png", class="footer__img" alt="")
+				div
+					p.subtitle-type-first.footer__title US Address
+					p.text-type-first.footer__title 41 Lehner Lane Suite 272
+			.footer__call
+				img(src="img/telephone.png", class="footer__img" alt="")
+				div
+					p.subtitle-type-first.footer__title Call Us
+					p.text-type-first.footer__title 444-599-3441
+			.footer__write
+				img(src="img/dog.png", class="footer__img" alt="")
+				div
+					p.subtitle-type-first.footer__title Write to Us
+					p.text-type-first.footer__title sales@medpro.com
+		section.contact 
+			.container 
+				.contact__section
+					.contact__block-first 
+						p.subtitle-type-first.contact__title About MedPro
+						p.text-type-first.contact__desc According to us blisters are a very common thing and we come across them very often in our daily lives. It is a very common occurrence like cold or fever depending upon your lifestyle. 
+					.contact__block-second
+						p.subtitle-type-first.contact__title Quick Links <br />
+						a.text-type-first.contact__link What Do We Offer? <br />
+						a.text-type-first.contact__link Coding Services <br />
+						a.text-type-first.contact__link FAQ’s <br />
+						a.text-type-first.contact__link Security <br />
+						a.text-type-first.contact__link Contact Us <br />
+					.contact__block-third 
+						p.subtitle-type-first.contact__title Stay Connected
+						.contact__block 
+							img.contact__img(src="img/facebookF.png", alt="")
+							img.contact__img(src="img/twitterF.png", alt="")
+							img.contact__img(src="img/linkedinF.png", alt="")
+		section.footer 
+			.container 
+				p.text-type-first.footer__text Medpro © 2019. All Rights Reserved
 	script(src="js/main.js")
