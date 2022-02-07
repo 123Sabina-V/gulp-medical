@@ -1,6 +1,6 @@
 const 
 	gulp = require('gulp'),
-	sass = require('gulp-sass'),
+	sass = require('gulp-sass')(require('sass')),
 	autoprefixer = require('gulp-autoprefixer'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify'),
@@ -136,6 +136,7 @@ gulp.task('build',
 
 const taskBuild = gulp.series('build');
 const taskWatch = gulp.series(compileScripts, compileCSSlibs, watchFiles, browserSync);
+// const sass = require('gulp-sass')(require('sass'))
 
 exports.build = taskBuild;
 exports.default = taskWatch;
