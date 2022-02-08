@@ -65,7 +65,7 @@
 
     &__title
         padding-top: 67px
-        font-family: Asap
+        font-family: "Asap-Bold",sans-serif
         font-style: normal
         font-weight: bold
         font-size: 24px
@@ -73,9 +73,33 @@
         color: #0E77AF
 
 @media (max-width: 1200px)
+    span
+        background: transparent !important
     .services
         &__container
             flex-direction: column
         &__block
             &::before
                 width: 350px
+
+@media (max-width: 768px)
+    .services
+        &__title
+            margin-right: 15px
+        &__block
+            justify-content: stretch
+            &::before
+                width: 350px
+
+@media (max-width: 664px)
+    .services
+        &__block
+            &_accordion
+                flex-direction: column
+@media (max-width: 375px)
+    .services
+        &__title
+            font-size: 18px
+        &__block
+            &::before
+                width: 310px
