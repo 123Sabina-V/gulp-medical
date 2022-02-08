@@ -22,7 +22,20 @@ html(lang="en")
 		.container
 			.header 
 				img.header__logo(src="img/logo.png", alt="")
-				.header__block 
+				nav.menu 
+					span
+					span
+				.header__block
+					a(href="").header__block_link HOME
+					a(href="").header__block_link ABOUT US
+					a(href="").header__block_link SERVICES
+					a(href="").header__block_link WHY US?
+					a(href="").header__block_link SECURITY
+					a(href="").header__block_link CASE
+					a(href="").header__block_link STUDIES
+					a(href="").header__block_link FAQ’S
+					a(href="").header__block_link CONTACT US
+				.header__block_mobile(id="myLinks") 
 					a(href="").header__block_link HOME
 					a(href="").header__block_link ABOUT US
 					a(href="").header__block_link SERVICES
@@ -43,17 +56,18 @@ html(lang="en")
 				.slider-container
 					div
 						img(src="img/Bitmap.png", class="header__img" alt="")
-						p.header__title-small For Physicians
-						p.header__title Our Promise
-						p.header__desc 90% First Pass payment within 30 days @up to 3% of collected revenue.
-						button.header__button REACH US
-					div
+						div.slider__block_text
+							p.header__title-small For Physicians
+							p.header__title Our Promise
+							p.header__desc 90% First Pass payment within 30 days @up to 3% of collected revenue.
+							button.header__button REACH US
+					div.slider__block_text
 						img(src="img/Bitmap.png", class="header__img" alt="")
 						p.header__title-small For Physicians
 						p.header__title Our Promise
 						p.header__desc 90% First Pass payment within 30 days @up to 3% of collected revenue.
 						button.header__button REACH US
-					div
+					div.slider__block_text
 						img(src="img/Bitmap.png", class="header__img" alt="")
 						p.header__title-small For Physicians
 						p.header__title Our Promise

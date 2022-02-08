@@ -34,6 +34,17 @@
 			$(this).find(".services__tab_plus").toggleClass('open-tab')
 			$( this ).parent().find( ".tab-content" ).slideToggle( );
 		  });
-	
+		  $(".menu").on("click", function () {
+			$(".dropdown-menu").slideToggle(300);
+			$(this).toggleClass("active");
+			// $(".navbar").toggleClass('active');
+			let x = document.getElementById("myLinks");
+	  
+			if (x.style.display == "flex") {
+			  x.style.display = "none";
+			} else {
+			  x.style.display = "flex";
+			}
+		  });
 	});
 })(jQuery);
