@@ -26,3 +26,24 @@
         color: white
         cursor: pointer
 
+@media ( max-width: 1200px )
+    .contact
+        height: max-content
+        padding-bottom: 50px
+        &__section
+            flex-wrap: wrap
+        &__block
+            &-second
+                margin-left: 50px
+                margin-right: 0px
+            &-third
+                margin-top: 50px
+@media ( max-width: 709px )
+    .contact
+        &__desc
+            width: inherit
+        &__section
+        &__block
+            &-second
+                margin-top: 50px
+                margin-left: 0px

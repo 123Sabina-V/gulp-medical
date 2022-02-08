@@ -1,7 +1,7 @@
 .benefits
     &__button
         background: #B4141B
-        font-family: "Asap-Bold",sans-serif
+        font-family: Asap-Bold
         font-style: normal
         font-weight: bold
         font-size: 12px
@@ -22,6 +22,7 @@
         width: 60%
         height: 504px
     &__block
+        transition: all 0.3s
         margin-left: 60%
         position: relative
         width: 40%
@@ -29,7 +30,7 @@
         background: #0E77AF
         padding: 35px 0px 36px 34px
         margin-top: 21px
-        font-family: "Asap-Bold",sans-serif
+        font-family: Asap-Bold
         font-style: normal
         font-weight: bold
         font-size: 22px
@@ -40,7 +41,6 @@
             background: rgba(255, 255, 255, 0.9)
             color: black
         &_text
-            
             position: absolute
             right: 0px
             width: 40%
@@ -48,6 +48,12 @@
             height: 504px
             // margin-left: 405px
             background: linear-gradient(180deg, #FCFCFC 0%, #F8F8F8 100%)
+            &-first
+                display: none
+            &-second
+                display: none
+            &-third
+                display: none
         &-first
             margin-top: 87px
 
@@ -70,12 +76,15 @@
             width: 100%
             margin-left: 0%
             &_text
-                padding: 77px 50 0 66px
+                height: max-content
+                padding: 77px 50 50px 66px
 @media  ( max-width: 452px  )
     .benefits
         &__block
             padding: 35px 0 36px 15px
             font-size: 17px
             &_text
-                height: 674px
+                height: 726px
+                &-second
+                    background: red
    

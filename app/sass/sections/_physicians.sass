@@ -10,7 +10,7 @@
             width: 104px
             height: 35px
             background: #B4141B
-            font-family: "Asap-Bold",sans-serif
+            font-family: Asap-Bold
             font-style: normal
             font-weight: bold
             font-size: 12px
@@ -26,7 +26,7 @@
         background: #FFFFFF
         border: 2px solid #E2E2E2
         box-sizing: border-box
-        font-family: "Asap-Regular",sans-serif
+        font-family: Asap-Regular
         font-style: normal
         font-weight: normal
         font-size: 14px
@@ -40,3 +40,29 @@
             height: 587px
             background: linear-gradient(180deg, #FCFCFC 0%, #F7F7F7 100%)
             padding: 54px 38px 52px 48px
+
+@media (max-width: 992px)
+    .physicians
+        &__button-red
+            margin-left: 202px
+        &__input
+            width: 305px
+        &__block
+            &-grey
+                width: 402px
+                padding: 26px 38px 52px 48px
+            &-text 
+                margin-right: 50px
+
+@media (max-width: 779px)
+    .physicians
+        &__button-red
+            margin-left: 37px
+        &__input
+            width: min-content
+        &__section
+            flex-direction: column
+        &__block
+            &-grey
+                width: min-content
+                margin-top: 50px

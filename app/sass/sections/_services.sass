@@ -1,5 +1,10 @@
 .services
     display: none
+    &__subtitle
+        margin-bottom: 35px
+    &__box
+        padding: 32px 0px
+        border-bottom: 1px solid #979797
     &__desc
         width: 419px
         margin-left: 25px
@@ -10,32 +15,27 @@
     &__block
         display: flex
         justify-content: space-between
-        &::before
-            content: ''
-            position: absolute
-            height: 1px
-            background: #979797
-            width: 592px
+        align-items: center
         &-second
             width: 474px
         &-first
             width: 592px
             margin-right: 102px
         &_accordion
+            margin-top: 32px
             display: flex
-            padding-top: 32px
             &-small
                 margin-left: 25px
     &__img
         padding: 50px 0px
     &__tab_plus
-        margin-top: 73px
         right: 0px
         width: 20px
         height: 20px
         position: relative
         transition: all 0.3s
         cursor: pointer
+        background: transparent
         &::after
             display: block
             content: ""
@@ -64,8 +64,9 @@
                 transform: translate(-50%, -50%)  rotateZ(0deg)
 
     &__title
-        padding-top: 67px
-        font-family: "Asap-Bold",sans-serif
+        margin: 0px
+        padding: 0px
+        font-family: Asap-Bold
         font-style: normal
         font-weight: bold
         font-size: 24px
@@ -73,11 +74,10 @@
         color: #0E77AF
 
 @media (max-width: 1200px)
-    span
-        background: transparent !important
     .services
         &__container
             flex-direction: column
+            padding-bottom: 0px
         &__block
             &::before
                 width: 350px
@@ -93,9 +93,25 @@
 
 @media (max-width: 664px)
     .services
+        &__accordion
+            &_img
+                width: 150px
+                height: 150px
+        &__img
+            height: 291px
+        &__box
+            width: max-content
         &__block
+            &_desc
+                width: 300px
+            &-second
+                width: 310px
+                margin-top: 50px
             &_accordion
                 flex-direction: column
+                &-small
+                    margin-left: 0px
+                    
 @media (max-width: 375px)
     .services
         &__title

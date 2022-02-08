@@ -1,17 +1,20 @@
+.testimonials__active
+    display: block !important
 .testimonials
     background: #0E77AF
     margin: 161px 0px 179px 0px
     height: 651px
-    
+    &__slider
+        display: flex
     &__text
-        font-family: "Asap-Regular",sans-serif
+        font-family: Asap-Regular
         font-style: normal
         font-weight: normal
         font-size: 28px
         line-height: 32px
         color: #FFFFFF
     &__percent
-        font-family: "Asap-Bold",sans-serif
+        font-family: Asap-Bold
         font-style: normal
         font-weight: bold
         font-size: 64px
@@ -26,15 +29,16 @@
     &__section
         display: flex
     &__block
+
         &_desc
             padding: 17px 0px 54px 0px
-            font-family: "Asap-Regular",sans-serif
+            font-family: Asap-Regular
             font-style: normal
             font-weight: normal
             font-size: 16px
             color: #000000
         &_title
-            font-family: "Asap-Bold",sans-serif
+            font-family: Asap-Bold
             font-style: normal
             font-weight: bold
             font-size: 20px
@@ -44,8 +48,35 @@
             width: 230px
             margin-right: 207px
         &-second
+            display: none
             margin-top: 148px
             width: 734px
             background: #FFFFFF
             height: 356px
             padding: 75px 45px 0px 59px
+
+@media ( max-width: 992px)
+    .testimonials
+        &__block
+            &-first
+                margin-right: 50px
+            &_desc
+                padding: 17px 0 14px 0
+@media ( max-width: 768px)
+    .testimonials
+        &__title
+            padding-top: 50px
+        &__block
+            &-second
+                margin-top: 50px
+                height: max-content
+@media ( max-width: 576px)
+    .testimonials
+        height: max-content
+        padding-bottom: 50px
+        &__section
+            flex-direction: column
+        &__block
+            &-second
+                width: inherit
+                padding: 43px 16px 0 20px

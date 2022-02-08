@@ -3,7 +3,8 @@
     justify-content: space-between
     padding: 85px 0px 135px 0px
     &__btn
-        font-family: "Asap-Bold",sans-serif
+        padding: 0px
+        font-family: Asap-Bold
         font-style: normal
         font-weight: bold
         font-size: 12px
@@ -11,13 +12,14 @@
         color: #7D7D7D
         text-transform: uppercase
     &__img
-        height: 486px
+        object-fit: cover
+        width: 722px
     &__title
         padding-bottom: 57px
         color: #000000
     &__desc
         padding-top: 40px
-        font-family: "Asap-Regular",sans-serif
+        font-family: Asap-Regular
         font-style: normal
         font-weight: normal
         font-size: 16px
@@ -25,7 +27,7 @@
         color: #000000
     &__block
         &_desc
-            font-family: "Asap-Regular",sans-serif
+            font-family: Asap-Regular
             font-style: normal
             font-weight: normal
             font-size: 16px
@@ -33,7 +35,7 @@
             padding-right: 29px
             color: #000000
         &_title
-            font-family: "Asap-Bold",sans-serif
+            font-family: Asap-Bold
             font-style: normal
             font-weight: bold
             font-size: 24px
@@ -45,7 +47,6 @@
         display: flex
         &-first
             width: 722px
-            padding-right: 50px
         &-greyF
             position: relative
             padding: 45px 0px 0px 37px
@@ -73,8 +74,13 @@
             height: 425px
 @media ( max-width:  816px)
     .about-us
+        &__block 
+            &_desc
+                width: 300px
         &__img
             height: 325px
+            width: auto
+            
         &__block-first
             width: 100%
 @media ( max-width:  575px)
