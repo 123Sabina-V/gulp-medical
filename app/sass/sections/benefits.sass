@@ -1,3 +1,5 @@
+.visible
+    display: block
 .benefits
     &__button
         background: #B4141B
@@ -11,6 +13,7 @@
         text-transform: uppercase
         color: #FFFFFF
         margin-top: 26px
+        width: 104px
     &__section
         display: flex
         justify-content: space-around
@@ -41,6 +44,7 @@
             background: rgba(255, 255, 255, 0.9)
             color: black
         &_text
+            display: none
             position: absolute
             right: 0px
             width: 40%
@@ -49,11 +53,17 @@
             // margin-left: 405px
             background: linear-gradient(180deg, #FCFCFC 0%, #F8F8F8 100%)
             &-first
-                display: none
+                // display: none
+                &-show
+                    display: block
             &-second
-                display: none
+                // display: none
+                &-show
+                    display: block
             &-third
-                display: none
+                // display: none
+                &-show
+                    display: block
         &-first
             margin-top: 87px
 

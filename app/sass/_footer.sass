@@ -10,12 +10,13 @@
     &__title
         color: white
         margin: 0px
+        padding-bottom: 11px
     &__text
         color: white
     &__section
         position: relative
     &__img
-        margin-top: 50px
+        margin-top: 45px
         margin-right: 31px
         height: 26px
     &__box
@@ -33,7 +34,15 @@
 
 @media ( max-width: 1200px )
     .footer
+        &__box
+            width: 300px
+//         &__block
+//             flex-wrap: wrap
+//             position: relative
+    
+@media ( max-width: 992px )
+    .footer
         &__block
+            top: 0px
             flex-wrap: wrap
             position: relative
-    

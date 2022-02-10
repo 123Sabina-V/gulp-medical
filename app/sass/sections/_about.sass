@@ -13,7 +13,7 @@
         text-transform: uppercase
     &__img
         object-fit: cover
-        width: 722px
+        width: 100%
     &__title
         padding-bottom: 57px
         color: #000000
@@ -46,7 +46,7 @@
             right: 18px
         display: flex
         &-first
-            width: 722px
+            width: 768px
         &-greyF
             position: relative
             padding: 45px 0px 0px 37px
@@ -67,6 +67,10 @@
             height: 240px
             background: linear-gradient(180deg, #FCFCFC 0%, #F7F7F7 100%)
 @media ( max-width:  1200px)
+ .about-us
+        &__block-first
+            padding-right: 50px
+@media ( max-width:  992px)
     .about-us
         flex-wrap: wrap
         justify-content: center
@@ -74,7 +78,9 @@
             height: 425px
 @media ( max-width:  816px)
     .about-us
-        &__block 
+        &__block
+            &-first
+                padding-right: 0px 
             &_desc
                 width: 300px
         &__img
